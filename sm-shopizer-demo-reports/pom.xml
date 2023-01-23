@@ -16,25 +16,30 @@
 		<dependency>
 			<groupId>com.shopizer</groupId>
 			<artifactId>sm-core-model</artifactId>
+			<version>3.2.5</version>
 		</dependency>
 
 		<!-- sm-core-modules -->
 		<dependency>
 			<groupId>com.shopizer</groupId>
 			<artifactId>sm-core-modules</artifactId>
+			<version>3.2.5</version>
 		</dependency>
     		<dependency>
 			<groupId>com.shopizer</groupId>
 			<artifactId>sm-core</artifactId>
+			<version>3.2.5</version>
 		</dependency>
       
      		 <dependency>
 			<groupId>com.shopizer</groupId>
 			<artifactId>sm-shop</artifactId>
+			<version>3.2.5</version>
 		</dependency>
     		  <dependency>
 			<groupId>com.shopizer</groupId>
 			<artifactId>sm-shop-model</artifactId>
+			 <version>3.2.5</version>
 		</dependency>
     </dependencies>
       
