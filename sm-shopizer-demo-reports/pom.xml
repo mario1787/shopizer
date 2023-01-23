@@ -22,20 +22,21 @@
 		<dependency>
 			<groupId>com.shopizer</groupId>
 			<artifactId>sm-core-modules</artifactId>
-    </dependencies>
-    <dependency>
+		</dependency>
+    		<dependency>
 			<groupId>com.shopizer</groupId>
 			<artifactId>sm-core</artifactId>
-    </dependencies>
+		</dependency>
       
-      <dependency>
+     		 <dependency>
 			<groupId>com.shopizer</groupId>
 			<artifactId>sm-shop</artifactId>
-    </dependencies>
-      <dependency>
+		</dependency>
+    		  <dependency>
 			<groupId>com.shopizer</groupId>
 			<artifactId>sm-shop-model</artifactId>
 		</dependency>
+    </dependencies>
       
     <build>
         <plugins>
