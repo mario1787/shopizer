@@ -86,7 +86,18 @@
 	<!--BOM -->
 	<dependencyManagement>
 		<dependencies>
-
+			<dependency>
+		 	   	<groupId>org.junit.jupiter</groupId>
+           			 <artifactId>junit-jupiter-api</artifactId>
+		    		<version>5.8.2</version>
+         			   <scope>test</scope>
+       			 </dependency>
+       			 <dependency>
+       				     <groupId>org.assertj</groupId>
+        			    <artifactId>assertj-core</artifactId>
+        			    <version>3.19.0</version>
+         			   <scope>test</scope>
+      			 </dependency>
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-starter-web</artifactId>
@@ -505,6 +516,11 @@
 	<build>
 		<pluginManagement>
 			<plugins>
+				<plugin>
+             				   <groupId>org.apache.maven.plugins</groupId>
+            				    <artifactId>maven-surefire-plugin</artifactId>
+             				   <version>3.0.0-M5</version>
+           			</plugin>
 				<plugin>
 					<groupId>org.jacoco</groupId>
 					<artifactId>jacoco-maven-plugin</artifactId>
