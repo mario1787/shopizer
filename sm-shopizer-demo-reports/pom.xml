@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.shopizer</groupId>
+        <artifactId>shopizer</artifactId>
+        <version>3.2.5</version>
+    </parent>
+
+    <artifactId>sm-shopizer-demo-reports</artifactId>
+
+    <dependencies>
+       <!-- sm-core-model -->
+		<dependency>
+			<groupId>com.shopizer</groupId>
+			<artifactId>sm-core-model</artifactId>
+		</dependency>
+
+		<!-- sm-core-modules -->
+		<dependency>
+			<groupId>com.shopizer</groupId>
+			<artifactId>sm-core-modules</artifactId>
+    </dependencies>
+    <dependency>
+			<groupId>com.shopizer</groupId>
+			<artifactId>sm-core</artifactId>
+    </dependencies>
+      
+      <dependency>
+			<groupId>com.shopizer</groupId>
+			<artifactId>sm-shop</artifactId>
+    </dependencies>
+      <dependency>
+			<groupId>com.shopizer</groupId>
+			<artifactId>sm-shop-model</artifactId>
+		</dependency>
+      
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.8</version>
+                <executions>
+                    <execution>
+                        <id>jacoco-report-aggregate</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>report-aggregate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
