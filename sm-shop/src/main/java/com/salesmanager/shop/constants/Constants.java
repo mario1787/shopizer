@@ -29,7 +29,7 @@ public class Constants {
 	
 
 
-	public final static String DEFAULT_DOMAIN_NAME = "localhost:8080";
+	public final static String DEFAULT_DOMAIN_NAME = "localhost:8085";
 
 	public final static String ADMIN_STORE = "ADMIN_STORE";
 	public final static String ADMIN_USER = "ADMIN_USER";

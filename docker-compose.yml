@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+
+  shopizer-db:
+    image: mysql:8.0.17
+    environment:
+      - MYSQL_ROOT_PASSWORD=shopizer123
+      - MYSQL_DATABASE=SALESMANAGER
+      - MYSQL_USER=shopizer_db_user
+      - MYSQL_PASSWORD=shopizer_db_password
+    image: mysql/mysql-server:8.0.28
+    container_name: shopizer-db
+
+    ports:
+      - "3308:3306"

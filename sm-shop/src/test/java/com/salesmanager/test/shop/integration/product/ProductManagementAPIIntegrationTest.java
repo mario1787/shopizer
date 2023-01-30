@@ -176,7 +176,7 @@ public class ProductManagementAPIIntegrationTest extends ServicesTestSupport {
 		final HttpEntity<String> entity = new HttpEntity<>(json, getHeader());
 
 		final ResponseEntity response = restTemplate.postForEntity(
-				"http://localhost:8080/sm-shop/services/private/DEFAULT/product/optionValue", entity,
+				"http://localhost:8085/sm-shop/services/private/DEFAULT/product/optionValue", entity,
 				PersistableProductOptionValue.class);
 
 		final PersistableProductOptionValue opt = (PersistableProductOptionValue) response.getBody();
@@ -223,7 +223,7 @@ public class ProductManagementAPIIntegrationTest extends ServicesTestSupport {
 		final HttpEntity<String> entity = new HttpEntity<>(json, getHeader());
 
 		final ResponseEntity response = restTemplate.postForEntity(
-				"http://localhost:8080/sm-shop/services/private/DEFAULT/product/option", entity,
+				"http://localhost:8085/sm-shop/services/private/DEFAULT/product/option", entity,
 				PersistableProductOption.class);
 
 		final PersistableProductOption opt = (PersistableProductOption) response.getBody();
@@ -239,7 +239,7 @@ public class ProductManagementAPIIntegrationTest extends ServicesTestSupport {
 		final HttpEntity<String> httpEntity = new HttpEntity<>(getHeader());
 
 		final ResponseEntity<ReadableProduct[]> response = restTemplate.exchange(
-				"http://localhost:8080/sm-shop/services/rest/products/DEFAULT/en/" + testCategoryID, HttpMethod.GET,
+				"http://localhost:8085/sm-shop/services/rest/products/DEFAULT/en/" + testCategoryID, HttpMethod.GET,
 				httpEntity, ReadableProduct[].class);
 
 		if (response.getStatusCode() != HttpStatus.OK) {
@@ -369,7 +369,7 @@ public class ProductManagementAPIIntegrationTest extends ServicesTestSupport {
 		final HttpEntity<String> entity = new HttpEntity<>(json, getHeader());
 
 		// post to create category web service
-		final ResponseEntity response = restTemplate.postForEntity("http://localhost:8080/api/v1/product", entity,
+		final ResponseEntity response = restTemplate.postForEntity("http://localhost:8085/api/v1/product", entity,
 				PersistableProduct.class);
 
 		final PersistableProduct prod = (PersistableProduct) response.getBody();
@@ -385,7 +385,7 @@ public class ProductManagementAPIIntegrationTest extends ServicesTestSupport {
 
 		final HttpEntity<String> httpEntity = new HttpEntity<>(getHeader());
 
-		restTemplate.exchange("http://localhost:8080/sm-shop/services/rest/product/DEFAULT/en/" + testCategoryID + "/"
+		restTemplate.exchange("http://localhost:8085/sm-shop/services/rest/product/DEFAULT/en/" + testCategoryID + "/"
 				+ testProductID, HttpMethod.DELETE, httpEntity, ReadableProduct.class);
 		System.out.println("Product " + testProductID + " Deleted.");
 	}
