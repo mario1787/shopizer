@@ -1,5 +1,8 @@
 <?xml version="1.0"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
@@ -60,22 +63,17 @@
 		</dependency>
 
 		<!-- open search client -->
-		
+
 		<dependency>
 			<groupId>com.shopizer</groupId>
 			<artifactId>shopizer-search-opensearch-spring-boot-starter</artifactId>
 			<version>1.0.3</version>
 		</dependency>
-		
 
-		<!--
-		Want to use Square Payment Module ?
-        <dependency>
-            <groupId>com.shopizer</groupId>
-            <artifactId>shopizer-payment-square-spring-boot-starter</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        -->
+
+		<!-- Want to use Square Payment Module ? <dependency> <groupId>com.shopizer</groupId> 
+			<artifactId>shopizer-payment-square-spring-boot-starter</artifactId> <version>1.0.0</version> 
+			</dependency> -->
 
 
 		<!-- Google Map API -->
@@ -194,7 +192,7 @@
 
 		<!-- Payment dependencies -->
 
-		<!-- Paypal -->
+		<!-- Pay pal -->
 		<dependency>
 			<groupId>com.paypal.sdk</groupId>
 			<artifactId>merchantsdk</artifactId>
@@ -206,7 +204,7 @@
 			<artifactId>stripe-java</artifactId>
 		</dependency>
 
-		<!-- Braintree -->
+		<!-- Brain tree -->
 		<dependency>
 			<groupId>com.braintreepayments.gateway</groupId>
 			<artifactId>braintree-java</artifactId>
@@ -238,8 +236,5 @@
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 		</dependency>
-
 	</dependencies>
-	
-
 </project>
