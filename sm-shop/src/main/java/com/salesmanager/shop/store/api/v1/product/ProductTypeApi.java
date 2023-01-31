@@ -97,7 +97,7 @@ public class ProductTypeApi {
 
 	}
 
-	@PutMapping(value = "/private/products/type/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
+	@PutMapping(value = "/private/product/type/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
 	@ApiOperation(httpMethod = "PUT", value = "Update product type", notes = "", produces = "application/json", response = Void.class)
 	@ApiImplicitParams({ @ApiImplicitParam(name = "store", dataType = "String", defaultValue = "DEFAULT"),
 			@ApiImplicitParam(name = "lang", dataType = "String", defaultValue = "en") })
